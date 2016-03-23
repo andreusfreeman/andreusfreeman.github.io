@@ -1,0 +1,19 @@
+body {
+  width: 420px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+li {
+  padding: 5px;
+}
+div {
+  margin: 20px;
+}
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.image {
+  text-align: center;
+}

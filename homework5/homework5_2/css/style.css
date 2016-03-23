@@ -1,0 +1,36 @@
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+tr,
+td {
+  border: 5px solid #1f2121;
+}
+tr {
+  height: 40px;
+}
+td {
+  width: 40px;
+}
+.row-big {
+  height: 80px;
+}
+.row-small {
+  height: 20px;
+}
+.column-big {
+  width: 80px;
+}
+.color-yellow {
+  background-color: #ffed5e;
+}
+.color-orange {
+  background-color: #ff5928;
+}
+.color-blue {
+  background-color: #064480;
+}
+.color-black {
+  background-color: #414946;
+}
