@@ -114,7 +114,7 @@ figcaption span {
   font-size: 16px;
   font-weight: bold;
   font-style: italic;
-  margin-left: 23px;
+  margin-left: 43px;
 }
 .wrapper {
   margin: 0 auto;
@@ -308,8 +308,8 @@ figcaption span {
 .list-brands span {
   display: block;
   float: right;
-  margin-right: 86px;
-  margin-top: 1px;
+  margin-right: 97px;
+  margin-top: 3px;
   font-family: 'Lucida Sans', Arial;
 }
 .catalog-products img,
