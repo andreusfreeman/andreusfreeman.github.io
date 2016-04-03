@@ -138,10 +138,12 @@ nav {
 }
 .slider__text {
   display: block;
-  height: 69px;
+  height: 85px;
   width: 28%;
   overflow: hidden;
   margin-left: 40px;
+  font-family: 'open_sanslight';
+  color: #ffffff;
 }
 .shape {
   width: 83px;
@@ -484,7 +486,7 @@ footer {
 }
 @media screen and (min-width: 481px) {
   .wrapper {
-    width: 760px;
+    width: 768px;
   }
   .logo {
     text-align: left;
