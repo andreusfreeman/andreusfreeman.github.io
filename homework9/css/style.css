@@ -7,8 +7,8 @@ body {
 }
 @font-face {
     font-family: 'league_gothic';
-    src: url('../leaguegothic-regular-webfont.eot');
-    src: url('../leaguegothic-regular-webfont.eot?#iefix') format('eot'),
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('eot'),
          url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
          url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
          url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
@@ -19,7 +19,7 @@ body {
 @font-face {
     font-family: 'open_sanslight';
     src: url('../fonts/2209-webfont.eot');
-    src: url('../fonts/2209-webfont.eot?#iefix') format('embedded-opentype'),
+    src: url('../fonts/2209-webfont.eot?#iefix') format('eot'),
          url('../fonts/2209-webfont.woff2') format('woff2'),
          url('../fonts/2209-webfont.woff') format('woff'),
          url('../fonts/2209-webfont.ttf') format('truetype'),
