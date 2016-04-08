@@ -11,8 +11,7 @@ body {
     src: url('../leaguegothic-regular-webfont.eot?#iefix') format('eot'),
          url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
          url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
-         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
-         url('../fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
