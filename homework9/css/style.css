@@ -94,7 +94,6 @@ nav {
   list-style: none;
   border-radius: 10px;
   background-color: rgba(72, 59, 78, 0.6);
-  z-index: 100;
   overflow: hidden;
 }
 .menu-home__item {
@@ -110,6 +109,7 @@ nav {
 }
 .menu-home:hover .menu-home__list{
   display: block;
+  z-index: 100;
 }
 .slider {
   margin: 0 auto;
