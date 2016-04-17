@@ -1,0 +1,25 @@
+.* {
+  padding: 0px;
+  margin: 0px;
+}
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+.loading-site {
+  width: 40%;
+  float: left;
+  background-color: rgba(255, 0, 255, 0.1);;
+}
+.elements-site {
+  width: 20%;
+  float: left;
+  height: 500px;
+  background-color: rgba(255, 0, 0, 0.1);;
+}
+.control-elements {
+  width: 40%;
+  float: right;
+  height: 500px;
+  background-color: rgba(255, 100, 255, 0.1);;
+}
