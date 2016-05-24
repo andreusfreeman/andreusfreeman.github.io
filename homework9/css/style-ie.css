@@ -70,7 +70,7 @@ body {
     width: 45px;
     height: 24px;
     border-bottom: 2px solid #edbfff;
-    text-shadow: 0 0 1px #ffffff;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=95, Color='#ffffff')";
   }
   .menu-home__link {
     font-family: 'league_gothic';
@@ -83,7 +83,7 @@ body {
     padding-top: 8px;
     padding-bottom: 8px;
     width: 100%;
-    text-shadow: 0 0 1px #ffffff;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=95, Color='#ffffff')";
     border-bottom: 2px solid transparent;
   }
   .menu-home__list {
@@ -94,8 +94,8 @@ body {
     width: 245px;
     list-style: none;
     border-radius: 10px;
-    background-color: rgba(72, 59, 78, 0.6);
-    z-index: 100;
+    background-color: rgb(72, 59, 78);
+	z-index: 100;
     overflow: hidden;
   }
   .menu-home__item {
@@ -107,7 +107,7 @@ body {
   .menu-home__link:hover {
     background-color: #2c2332;
     border-bottom: 2px solid #edbfff;
-    text-shadow: 0 0 10px #ffffff;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=90, Color='#ffffff')";
   }
   .menu-home:hover .menu-home__list{
     display: block;
@@ -132,7 +132,7 @@ body {
     font-size: 36px;
     color: #fefefe;
     text-align: left;
-    text-shadow: 0 0 1px #000000;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#000000')";
     margin-top: 90px;
     margin-left: 66px;
   }
@@ -142,7 +142,7 @@ body {
     font-size: 18px;
     color: #edbfff;
     text-align: left;
-    text-shadow: 0 0 1px #000000;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#000000')";
     margin-left: 66px;
     width: 70%;
     height: 22px;
@@ -203,13 +203,13 @@ body {
   .about-company__header {
     font-family: 'league_gothic';
     font-size: 24px;
-    text-shadow: 0 0 2px #0f1518;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=95, Color='#0f1518')";
   }
   .about-company__text {
     font-family: 'open_sanslight';
     overflow: hidden;
     height: 81px;
-    text-shadow: 0 0 1px #0f1518;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=95, Color='#0f1518')";
   }
   .about-company__link {
     font-family: 'league_gothic';
@@ -222,16 +222,16 @@ body {
     text-align: right;
   }
   .about-company__link:hover {
-    text-shadow: 0 0 10px #fff;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=95, Color='#cccccc')";
   }
   main {
     height: 1793px;
     width: 100%;
-    background-color: #f9f9f9;
+    background: #f9f9f9;
     position: absolute;
     top: 515px;
     left: 0;
-    box-shadow: 0 0 10px black;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=95, Color='#ffffff')";
     z-index: 2;
   }
   .testimonia {
@@ -247,12 +247,11 @@ body {
   }
   .testimonia__header-first {
     color: #454545;
-    text-shadow: 1px 1px 2px #ffffff;
     display: block;
   }
   .testimonia__header-last {
     color: #edbfff;
-    text-shadow: 1px 1px 2px #ffffff;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=95, Color='#ffffff')";
   }
   .testimonia__text {
     font-family: 'open_sanslight';
@@ -260,7 +259,7 @@ body {
     overflow: hidden;
     height: 160px;
     line-height: 23px;
-    text-shadow: 1px 1px 2px #ffffff;
+
   }
   .testimonia__icon {
     width: 50px;
@@ -272,7 +271,7 @@ body {
   }
   .testimonia__block {
     height: 219px;
-    background-color: #ffffff;
+    background: #ffffff;
     padding: 30px 20px 35px 40px;
     margin-left: 19px;
     margin-top: 645px;
@@ -293,7 +292,7 @@ body {
   .blog-post-header {
     font-family: 'league_gothic';
     font-size: 30px;
-    text-shadow: 1px 1px 2px #ffffff;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=90, Color='#ffffff')";
   }
   figure {
     height: 50px;
@@ -306,7 +305,7 @@ body {
     width: 80%;
     overflow: hidden;
     height: 20px;
-    text-shadow: 0 0 2px #ffffff;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=80, Color='#ffffff')";
   }
   .blog-post__text {
     font-family: 'open_sanslight';
@@ -314,7 +313,7 @@ body {
     margin-left: 0px;
     height: 22px;
     overflow: hidden;
-    text-shadow: 0 0 2px #ffffff;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=90, Color='#ffffff')";
   }
   .blog-post__block {
     padding: 2px 0px 0px 8px;
@@ -335,7 +334,7 @@ body {
     float: right;
     text-decoration: none;
     color: #454545;
-    text-shadow: 0 0 5px #fff;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=90, Color='#ffffff')";
     margin-top: 7px;
   }
   .logos-img {
@@ -409,7 +408,7 @@ body {
     display: none;
     clear: both;
     float: left;
-    background-color: #ececec;
+    background: #ececec;
     height: 395px;
   }
   .news-category__item {
@@ -444,7 +443,7 @@ body {
     font-family: 'open_sanslight';
     font-size: 12px;
     color: #fff;
-    text-shadow: 1px 1px 3px #000000;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#000000')";
   }
   .menu-footer {
     margin-top: 1216px;
@@ -461,8 +460,9 @@ body {
   .menu-footer__link {
     color: #fff;
     text-decoration: none;
-    text-shadow: 2px 2px 2px #000000;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#000000')";
   }
+
 }
 @media screen and (min-width: 480px) {
   .wrapper {
@@ -476,7 +476,8 @@ body {
     margin-top: 25px;
   }
   .slider {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgb(0, 0, 0);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
     position: relative;
   }
   .slider__cap {
@@ -559,7 +560,7 @@ body {
     display: block;
     clear: both;
     float: left;
-    background-color: #ececec;
+    background: #ececec;
     height: 675px;
   }
   .news-category__cap {
@@ -583,16 +584,16 @@ body {
   .menu-home__list {
     display: block;
     width: 100%;
-    background-color: inherit;
+    background: inherit;
     position: inherit;
   }
   .menu-home__link {
-    text-shadow: 2px 2px 2px #000000;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=90, Color='#000000')";
   }
   .menu-home__link:hover {
     background-color: inherit;
     border-bottom: 2px solid #edbfff;
-    text-shadow: 0 0 0 #000;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=90, Color='#000000')";
   }
   .menu-home__item {
     font-family: 'league_gothic';
