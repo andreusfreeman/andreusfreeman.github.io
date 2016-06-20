@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.main {
+  margin: 0 auto;
+  position: relative;
+  width: 1000px;
+  height: 500px;
+  font-family: sans-serif;
+}
+.title-parametre {
+  font-size: 20px;
+  display: block;
+  text-align: center;
+}
+.search__block__result-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+}
+sup {
+    top: -.5em;
+}
+sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+}
+.search__block__area,
+.search__block__flat {
+  width: 600px;
+  margin: 0 auto;
+  border: 1px solid red;
+  margin-bottom: 10px;
+}
+.search__block__flat-type-calc-desc {
+  margin: 10px;
+  margin-left: 60px;
+  font-size: 12px;
+}
+.search__block__type-fuel {
+  width: 348px;
+  float: right;
+  border: 1px solid red;
+  margin: 10px;
+}
+.search__block__area-header,
+.search__block__type-fuel-header,
+.search__block__flat-header {
+  height:25px;
+  background: linear-gradient(#fa2525, #e69494);
+  padding: 5px;
+  color: white;
+  font-family: Calibri, sans-serif;
+}
+.search__block__area-body{
+  padding: 10px;
+}
+.search__block__flat-type,
+.search__block__flat-type-floor {
+  margin: 0 auto;
+}
+.search__block__flat-type,
+.search__block__flat-type-floor {
+  margin: 5px;
+  margin-left: 60px;
+   li {
+    display: inline-block;
+    cursor: pointer;
+    list-style: none;
+  }
+}
+.search__block__type-fuel-type li{
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  padding: 5px;
+  list-style: none;
+  overflow: hidden;
+  margin: 2px;
+  border: 1px solid blue;
+  float: left;
+}
+.search__block__area-checkbox {
+  clear: both;
+
+  input {
+    padding: 10px;
+    cursor: pointer;
+  }
+  label {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+}
+.search__block__result-boiler {
+  width: 90%;
+  margin: 0 auto;
+
+  li {
+    list-style: none;
+    margin: 10px;
+  }
+}
+h4 {
+  margin-top: 100px;
+  padding: 20px;
+}
+.commonRange {
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px;
+}
+table {
+  border: 1px solid grey;
+  border-style: dashed;
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+
+  thead {
+    background-color: rgba(165, 162, 177, 0.5);
+  }
+
+  input {
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+  }
+}
+td {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid grey;
+  border-style: dashed;
+}
+tr {
+  border: 1px solid grey;
+  border-style: dashed;
+}
+
+@import 'range';
