@@ -28,10 +28,9 @@ app.filter('squareHouse', function() {
 app.filter('capasityBoiler', function () {
   return function (items, squareMetr) {
     var filtered = [];
-    var firstCapacity = Math.floor(squareMetr/100)*100;
     var lastCapacity = Math.ceil(squareMetr/100)*100;
     for (var i = 0; i < items.length; i++) {
-      if ( items[i].capacity >= firstCapacity &&  items[i].capacity <= lastCapacity ) {
+      if ( items[i].capacity >= squareMetr &&  items[i].capacity <= lastCapacity ) {
         filtered.push(items[i]);
       }
     }
