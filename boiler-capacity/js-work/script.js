@@ -60,7 +60,7 @@ app.controller('mainCtrl', function($scope, $http){
 		pelletWood: ['Пеллета, Древесная', 2210, 1.020, 1.020, 5.810, 0.870, 'тонн', 'pelletWood']
 	};
 
-  $http.get('../result.js')
+  $http.get('http://andreusfreeman.github.io/boiler-capacity/result.js')
   .success(function(result){
     $scope.resultBoiler = result;
   });
