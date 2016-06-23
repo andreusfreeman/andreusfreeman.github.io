@@ -30,7 +30,12 @@ app.filter('capacityBoiler', function () {
     var filtered = [];
     var filteredFuel = [];
     for (var i = 0; i < items.length; i++) {
-      if ( items[i].capacityMax >= squareMetr ) {
+      if ( squareMetr < 140 ) {
+        squareMetr = 140;
+      } else if ( squareMetr >= 5000 ) {
+        squareMetr = 6000;
+      };
+      if ( items[i].capacityMax >= squareMetr && items[i].capacityMin <= squareMetr ) {
         filtered.push(items[i]);
       }
     }
@@ -47,6 +52,9 @@ app.filter('capacityBoiler', function () {
           $(this).attr('style', 'opacity: 0.5');
         }
       });
+      if ( filteredFuel.length === 0 ) {
+        filteredFuel.push('not found');
+      }
     return filteredFuel;
   };
 });
@@ -71,7 +79,7 @@ app.controller('mainCtrl', function($scope, $http, dataFactory){
   $scope.valueFuel = dataFactory.valueFuel;
   $scope.nameFuelType = dataFactory.fuelType;
 
-  $http.get('http://andreusfreeman.github.io/boiler-capacity/result.js')
+  $http.get('http://127.0.0.1:8080/result.js')
   .success(function(result){
     $scope.resultBoiler = result;
   });
