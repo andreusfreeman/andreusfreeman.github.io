@@ -6,7 +6,7 @@
     "capacityMin": 150,
   	"capacityMax": 330,
   	"fuel": "wood",
-    "fuel_second": "wood",
+    "fuelSecond": "wood",
   	"link": "http://altep.ua/produkciya/kotel-na-tverdom-toplive-kt-1e/"
   },
   {
@@ -16,7 +16,7 @@
     "capacityMin": 150,
   	"capacityMax": 450,
   	"fuel": "wood",
-    "fuel_second": "wood",
+    "fuelSecond": "wood",
   	"link": "http://altep.ua/produkciya/kotel-kt-1en-15-45-kvt/"
   },
   {
@@ -26,7 +26,7 @@
     "capacityMin": 170,
   	"capacityMax": 1200,
   	"fuel": "wood",
-    "fuel_second": "wood",
+    "fuelSecond": "wood",
   	"link": "http://altep.ua/produkciya/kotel-kt-2e-17-120-kvt/"
   },
   {
@@ -36,7 +36,7 @@
     "capacityMin": 150,
   	"capacityMax": 1500,
   	"fuel": "wood",
-    "fuel_second": "wood",
+    "fuelSecond": "pelleta",
   	"link": "http://altep.ua/produkciya/kotel-kt-2en-15-150-kvt/"
   },
   {
@@ -46,7 +46,7 @@
     "capacityMin": 170,
   	"capacityMax": 1200,
   	"fuel": "wood",
-    "fuel_second": "wood",
+    "fuelSecond": "wood",
   	"link": "http://altep.ua/produkciya/kotel-kt-2e-u-17-120-kvt/"
   },
   {
@@ -56,6 +56,7 @@
     "capacityMin": 140,
   	"capacityMax": 4000,
   	"fuel": "wood",
+  	"fuelSecond": "wood",
   	"link": "http://altep.ua/produkciya/kotly-otopitelnye-na-tverdom-toplive-kt-3e/"
   },
   {
@@ -65,7 +66,7 @@
     "capacityMin": 140,
   	"capacityMax": 5000,
   	"fuel": "wood",
-    "fuel_second": "pelleta",
+    "fuelSecond": "pelleta",
   	"link": "http://altep.ua/produkciya/kotel-kt-3en-150-500-kvt/"
   },
   {
@@ -75,7 +76,7 @@
     "capacityMin": 6000,
   	"capacityMax": 10000,
   	"fuel": "wood",
-    "fuel_second": "pelleta",
+    "fuelSecond": "pelleta",
   	"link": "http://altep.ua/produkciya/kotel-kt-3enmega/"
   },
   {
@@ -85,7 +86,7 @@
     "capacityMin": 170,
   	"capacityMax": 1200,
   	"fuel": "pelleta",
-    "fuel_second": "pelleta",
+    "fuelSecond": "pelleta",
   	"link": "http://altep.ua/produkciya/tverdotoplivnye-kotly-na-pelletax-kt-2e-sh/"
   },
   {
@@ -95,7 +96,7 @@
     "capacityMin": 170,
   	"capacityMax": 1200,
   	"fuel": "pelleta",
-    "fuel_second": "pelleta",
+    "fuelSecond": "pelleta",
   	"link": "http://altep.ua/produkciya/kotel-kt-2e-pg-17-50-kvt/"
   },
   {
@@ -105,7 +106,7 @@
     "capacityMin": 1250,
   	"capacityMax": 5000,
   	"fuel": "pelleta",
-    "fuel_second": "pelleta",
+    "fuelSecond": "pelleta",
   	"link": "http://altep.ua/produkciya/tverdotoplivnye-pelletnye-kotly-kt-3e-sh/"
   },
   {
@@ -115,7 +116,7 @@
     "capacityMin": 140,
   	"capacityMax": 5000,
   	"fuel": "pelleta",
-    "fuel_second": "pelleta",
+    "fuelSecond": "pelleta",
   	"link": "http://altep.ua/produkciya/kotel-kt-3epg-80-500-kvt/"
   }
 ]
