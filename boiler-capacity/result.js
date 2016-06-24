@@ -56,6 +56,7 @@
     "capacityMin": 140,
   	"capacityMax": 4000,
   	"fuel": "wood",
+  	"fuelSecond": "wood",
   	"link": "http://altep.ua/produkciya/kotly-otopitelnye-na-tverdom-toplive-kt-3e/"
   },
   {
