@@ -97,7 +97,7 @@ app.controller('mainCtrl', function($scope, $http, dataFactory){
   $scope.valueFuel = dataFactory.valueFuel;
   $scope.nameFuelType = dataFactory.fuelType;
 
-  $http.get('http://127.0.0.1:8080/result.js')
+  $http.get('http://andreusfreeman.github.io/boiler-capacity/result.js')
   .success(function(result){
     $scope.resultBoiler = result;
   });
