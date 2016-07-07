@@ -18,10 +18,10 @@ require(
     'jquery',
     'model',
     'tmpl',
-    'miew',
-    'montroller'
+    'view',
+    'controller'
   ],
-  function($, model, tmpl, miew, montroller) {
+  function($, model, tmpl, view, controller) {
     $(function() {
 		var firstToDoList = [
 			'I am studing CSS',
@@ -30,8 +30,8 @@ require(
 			'I am studing AngularJS'
 		];
 		var model = new model(firstToDoList);
-		var view = new miew(model);
-		var controller = new montroller(model, view);
+		var view = new view(model);
+		var controller = new controller(model, view);
 	});
   }
 );
