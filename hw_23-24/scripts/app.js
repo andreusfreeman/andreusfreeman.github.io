@@ -1,28 +1,37 @@
 requirejs.config({
-  baseUrl: "js",
+  baseUrl: "scripts",
   paths: {
     'jquery': 'https://code.jquery.com/jquery-1.12.3',
-    'tmpl': 'template-script'
+    'tmpl': 'tmpl'
   },
   shim: {
     'jquery': {
       exports: 'jquery'
     },
     'tmpl': {
-      exports: 'template-script'
+      exports: 'tmpl'
     }
   }
 });
 require(
   [
-    'model',
     'jquery',
+    'Model',
     'tmpl',
-    'view',
-    'controller'
-
+    'View',
+    'Controller'
   ],
-  function(model, $, tmpl, view, controller) {
-
+  function($, Model, tmpl, View, Controller) {
+    $(function() {
+		var firstToDoList = [
+			'I am studing CSS',
+			'I am studing HTML',
+			'I am studing Javascript',
+			'I am studing AngularJS'
+		];
+		var model = new Model(firstToDoList);
+		var view = new View(model);
+		var controller = new Controller(model, view);
+	});
   }
 );

@@ -1,8 +1,8 @@
 define (
-  'view',
-  ['model', 'jquery', 'tmpl'],
-  function (model){
-		function View(model) {
+  'View',
+  ['jquery'],
+  function ($){
+		return function View(model) {
 			var self = this;
 			function init(){
 				var wrapper = tmpl($("#wrapper-template").html());
@@ -21,6 +21,4 @@ define (
 			};
 			init();
 		}
-		var view = new View(model);
-    return view;
 	});

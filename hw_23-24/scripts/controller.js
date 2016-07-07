@@ -1,8 +1,8 @@
 define(
-	'controller',
-	['model', 'view'],
-	function(model, view) {
-		function Controller(model, view) {
+	'Controller',
+	['jquery'],
+	function($) {
+		return function Controller(model, view) {
 			var self = this;
 			view.elements.addBtn.on('click', addItem);
 			view.elements.listContainer.on('click', '.item-delete', removeItem);
@@ -35,5 +35,4 @@ define(
 				$('.item-add').html('edit');
 			};
 		}
-	return new Controller(model, view);	
 });

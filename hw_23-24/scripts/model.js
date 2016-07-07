@@ -1,8 +1,8 @@
 define(
-	'model',
+	'Model',
 	['jquery'],
-	function(data) {
-		function Model(data) {
+	function($) {
+	  return function Model(data) {
 			var self = this;
 
 			self.data = data;
@@ -36,11 +36,4 @@ define(
 				return self.data;
 			};
 		}
-		var firstToDoList = [
-			'I am studing CSS',
-			'I am studing HTML',
-			'I am studing Javascript',
-			'I am studing AngularJS'
-		];
-		return new Model(firstToDoList);
 	});
