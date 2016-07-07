@@ -1,8 +1,8 @@
 define(
-	'Model',
+	'model',
 	['jquery'],
 	function($) {
-	  return function model(data) {
+	  return function Model(data) {
 			var self = this;
 
 			self.data = data;

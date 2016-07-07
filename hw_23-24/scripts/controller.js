@@ -1,8 +1,8 @@
 define(
-	'Controller',
+	'controller',
 	['jquery'],
 	function($) {
-		return function controller(model, view) {
+		return function Controller(model, view) {
 			var self = this;
 			view.elements.addBtn.on('click', addItem);
 			view.elements.listContainer.on('click', '.item-delete', removeItem);

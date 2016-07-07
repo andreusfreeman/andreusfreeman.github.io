@@ -21,7 +21,7 @@ require(
     'view',
     'controller'
   ],
-  function($, model, tmpl, view, controller) {
+  function($, Model, tmpl, View, Controller) {
     $(function() {
 		var firstToDoList = [
 			'I am studing CSS',
@@ -29,9 +29,9 @@ require(
 			'I am studing Javascript',
 			'I am studing AngularJS'
 		];
-		var model = new model(firstToDoList);
-		var view = new view(model);
-		var controller = new controller(model, view);
+		var model = new Model(firstToDoList);
+		var view = new View(model);
+		var controller = new Controller(model, view);
 	});
   }
 );
