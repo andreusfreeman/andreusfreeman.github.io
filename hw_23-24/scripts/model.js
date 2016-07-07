@@ -2,7 +2,7 @@ define(
 	'Model',
 	['jquery'],
 	function($) {
-	  return function Model(data) {
+	  return function model(data) {
 			var self = this;
 
 			self.data = data;

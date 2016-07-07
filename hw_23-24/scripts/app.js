@@ -16,12 +16,12 @@ requirejs.config({
 require(
   [
     'jquery',
-    'Model',
+    'model',
     'tmpl',
-    'View',
-    'Controller'
+    'miew',
+    'montroller'
   ],
-  function($, Model, tmpl, View, Controller) {
+  function($, model, tmpl, miew, montroller) {
     $(function() {
 		var firstToDoList = [
 			'I am studing CSS',
@@ -29,9 +29,9 @@ require(
 			'I am studing Javascript',
 			'I am studing AngularJS'
 		];
-		var model = new Model(firstToDoList);
-		var view = new View(model);
-		var controller = new Controller(model, view);
+		var model = new model(firstToDoList);
+		var view = new miew(model);
+		var controller = new montroller(model, view);
 	});
   }
 );

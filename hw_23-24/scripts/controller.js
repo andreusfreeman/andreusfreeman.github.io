@@ -2,7 +2,7 @@ define(
 	'Controller',
 	['jquery'],
 	function($) {
-		return function Controller(model, view) {
+		return function controller(model, view) {
 			var self = this;
 			view.elements.addBtn.on('click', addItem);
 			view.elements.listContainer.on('click', '.item-delete', removeItem);

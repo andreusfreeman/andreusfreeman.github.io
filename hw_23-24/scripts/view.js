@@ -2,7 +2,7 @@ define (
   'View',
   ['jquery'],
   function ($){
-		return function View(model) {
+		return function view(model) {
 			var self = this;
 			function init(){
 				var wrapper = tmpl($("#wrapper-template").html());
