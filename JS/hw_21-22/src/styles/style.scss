@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.modal-back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.modal-window {
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  width: 30%;
+  height: 200px;
+  background-color: #cccccc;
+}
+.result-info {
+  height: 130px;
+  margin: 10px;
+  color: blue;
+  text-align: center;
+}
+.button-close {
+  float: right;
+  margin-right: 20px;
+}
+.template-simple {
+ width: 50%;
+ margin: 0 auto;
+ margin-top: 50px;
+}
+.button-check {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.questions {
+  padding: 5px;
+}
+.answers {
+  padding: 5px;
+}
+.answers li {
+  list-style: none;
+}
