@@ -1,0 +1,25 @@
+﻿ <!doctype html>
+    <html>
+<head>
+    <title>Last Homework</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script data-main="scripts/app" src="scripts/require.js"></script>
+</head>
+<body>
+	<script type="text/template" id="wrapper-template">
+		<div class="wrapper">
+      <h2>Last Homework before Exam!</h2>
+			<ol class="item-list"></ol>
+			<div class="controller">
+				<input type="text" class="item-value" data-value="">
+				<button class="item-add">Add</button>
+			</div>
+		</div>
+	</script>
+	<script type="text/template" id="list-template">
+		<% for ( var i = 0; i < data.length; i++) { %>
+			<li><%= data[i] %><span data-value="<%= data[i] %>" class="item-delete"> <sup><img src="img/delete.png" width="20"></sup></span><span data-value="<%= data[i] %>" class="edit-delete"> <sup><img src="img/edit.png" width="20"></sup></span></li>
+		<% }; %>
+	</script>
+</body>
+</html>
