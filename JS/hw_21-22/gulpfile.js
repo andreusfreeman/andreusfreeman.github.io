@@ -1,6 +1,13 @@
 var gulp = require('gulp');
 var babel = require('gulp-babel');
 var sass = require('gulp-sass');
+var concat = require('gulp-concat');
+
+gulp.task('html', function() {
+  return gulp.src('src/index.html')
+    .pipe(concat('index.html'))
+    .pipe(gulp.dest('dist/'));
+});
 
 gulp.task('babel', () => {
 	return gulp.src('src/js/script.js')
