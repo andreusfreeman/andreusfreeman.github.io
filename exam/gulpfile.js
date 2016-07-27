@@ -8,9 +8,34 @@ var autoprefixer = require('gulp-autoprefixer');
 // var imagemin = require('imagemin');
 // var imageminPngquant = require('imagemin-pngquant');
 var spritesmith = require('gulp.spritesmith');
+var concatCss = require('gulp-concat-css');
+var concat = require('gulp-concat');
+var pump = require('pump');
+var uglifycss = require('gulp-uglifycss');
+
+gulp.task('css', function () {
+  gulp.src('src/style/concat/*.css')
+    .pipe(uglifycss({
+      "maxLineLen": 100,
+      "uglyComments": true
+    }))
+    .pipe(gulp.dest('dist/css/'));
+});
+
+gulp.task('concat-js', function() {
+  return gulp.src('src/js/*.js')
+    .pipe(concat('script.min.js'))
+    .pipe(gulp.dest('src/js/concat/'));
+});
+
+gulp.task('concat-css', function () {
+  return gulp.src('src/style/*.css')
+    .pipe(concatCss("style.min.css"))
+    .pipe(gulp.dest('src/style/concat/'));
+});
 
 gulp.task('sprite', function () {
-  var spriteData = gulp.src('sprite/*.png').pipe(spritesmith({
+  var spriteData = gulp.src('src/sprite/*.png').pipe(spritesmith({
     imgName: 'sprite.png',
     cssName: 'sprite.css'
   }));
@@ -29,9 +54,9 @@ gulp.task('default', function () {
 });
 gulp.task('compress', function (cb) {
   pump([
-        gulp.src('js/*.js'),
+        gulp.src('src/js/concat/*.js'),
         uglify(),
-        gulp.dest('dist')
+        gulp.dest('dist/js/')
     ],
     cb
   );

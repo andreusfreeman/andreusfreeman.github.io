@@ -1,9 +1,15 @@
+* {
+  box-sizing: border-box;
+}
 body {
   position: relative;
 }
 header {
   position: absolute;
   width: 100%;
+}
+figure {
+  margin: 0;
 }
 .header__block {
   width: 320px;
@@ -19,25 +25,29 @@ header {
 }
 .header__block__reg {
   margin: 0 auto;
-  width: 135px;
+  width: 190px;
   padding: 20px;
 }
 .header__block__reg-log {
   background: none;
-  border: none;
-  padding: 5px;
+  border: 2px solid rgba(0, 0, 0, 0);
+  padding: 10px;
   font-size: 14px;
   color: #ffffff;
   font-family: 'Montserrat_bold';
 }
 .header__block__reg-sign {
   background: none;
+  border: 2px solid rgba(0, 0, 0, 0);
   padding: 10px;
-  border-radius: 25px;
-  border: 2px solid #ffffff;
   font-size: 14px;
   color: #ffffff;
   font-family: 'Montserrat_bold';
+}
+.header__block__reg-log:hover,
+.header__block__reg-sign:hover {
+  border-radius: 25px;
+  border: 2px solid #ffffff;
 }
 .info {
   background-image: url(../img/top-image.jpg);
@@ -106,14 +116,20 @@ header {
   display: block;
   // background: linear-gradient(to top, #000000 , #ffffff);
 }
+.instruction__block__card__block {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 10px;
+}
 .instruction__block__card-image {
   border-radius: 5px;
   width: 100%;
 }
-.instruction__block__card-step {
-  position: absolute;
-  bottom: 115px;
-  left: 10px;
+.instruction__block__card__block-step {
+  width: 55px;
   font-size: 10px;
   background-color: #ff4e50;
   padding: 10px;
@@ -121,21 +137,25 @@ header {
   border-radius: 20px;
   font-family: 'Montserrat_regular';
 }
-.instruction__block__card-title {
-  position: absolute;
-  bottom: 60px;
-  left: 10px;
+.instruction__block__card__block-title {
   color: #ffffff;
   font-size: 24px;
   font-family: 'Montserrat_bold';
 }
-.instruction__block__card-description {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
+.instruction__block__card__block-description {
   color: #cccccc;
   font-size: 14px;
   font-family: 'Roboto_light';
+}
+.carousel-list-first,
+.carousel-list-middle,
+.carousel-list-last {
+    li {
+      display: none;
+    }
+    li:last-child {
+      display: block;
+    }
 }
 .partners {
   width: 100%;
@@ -167,22 +187,22 @@ header {
 .partners__block__card-icon1 {
   position: absolute;
   top: 90px;
-  left: 125px
+  left: 175px;
 }
 .partners__block__card-icon2 {
   position: absolute;
   top: 90px;
-  left: 125px
+  left: 175px;
 }
 .partners__block__card-icon3 {
   position: absolute;
   top: 90px;
-  left: 125px
+  left: 175px;
 }
 .partners__block__card-icon4 {
   position: absolute;
   top: 90px;
-  left: 125px
+  left: 175px;
 }
 .partners__block__card-name {
   color: #333333;
@@ -211,6 +231,9 @@ header {
 .ideas {
   width: 100%;
 }
+.ideas__block {
+  margin: 10px;
+}
 .ideas__title {
   display: block;
   width: 300px;
@@ -219,6 +242,16 @@ header {
   font-size: 22px;
   color: #333333;
   text-align: center;
+  font-family: 'Montserrat_bold';
+}
+.ideas__image-title {
+  position: absolute;
+  top: 45%;
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 22px;
   font-family: 'Montserrat_bold';
 }
 .ideas__question {
@@ -260,10 +293,32 @@ header {
   margin: 0 auto;
   overflow: hidden;
 }
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 100%;
+}
+
+.grid-item {
+  float: left;
+  position: relative;
+}
+
 .grid-item img {
   display: block;
   max-width: 100%;
+  margin: 0 auto;
+  padding: 5px;
 }
+
+// .grid-item {
+//   width: 31,2%;
+// }
 footer {
   border-top: 3px solid #ff4e50;
 }
@@ -276,13 +331,11 @@ footer {
   margin-top: 20px;
 }
 .footer__company {
-  width: 300px;
   margin: 0 auto;
   margin-top: 10px;
   overflow: hidden;
 }
 .footer__partners {
-  width: 300px;
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 20px;

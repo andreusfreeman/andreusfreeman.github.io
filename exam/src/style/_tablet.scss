@@ -1,0 +1,172 @@
+.header__block {
+  width: 100%;
+}
+.header__block-title {
+  float: left;
+  margin-top: 30px;
+  margin-left: 45px;
+}
+.header__block__reg {
+  float: right;
+}
+.info__block {
+  width: 500px;
+}
+.info__block-title {
+  font-size: 52px;
+}
+.info__block-text {
+  font-size: 24px;
+}
+.carousel-list-first,
+.carousel-list-middle,
+.carousel-list-last {
+    list-style: none;
+    width: 10000px;
+    padding: 0;
+    position: relative;
+
+    li {
+      display: block;
+    }
+}
+.carousel-hider {
+    width: 320px;
+    overflow: hidden;
+    float: left;
+}
+.carousel-element {
+    display: block;
+    margin-right: 25px;
+    float: left;
+}
+.instruction__title {
+  width: 100%;
+}
+.instruction__block__card {
+  position: relative;
+  width: 32%;
+  height: 400px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 1%;
+  overflow: hidden;
+}
+.instruction__block__card-image {
+  width: 320px;
+  height: 400px;
+}
+.instruction__block__card-button-left-first,
+.instruction__block__card-button-left-middle,
+.instruction__block__card-button-left-last {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  display: block;
+  background-image: url(../img/sprite.png);
+  background-position: -30px 0px;
+  width: 30px;
+  height: 56px;
+  cursor: pointer;
+  z-index: 10;
+}
+.instruction__block__card-button-right-first,
+.instruction__block__card-button-right-middle,
+.instruction__block__card-button-right-last {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  display: block;
+  background-image: url(../img/sprite.png);
+  background-position: -90px 0px;
+  width: 30px;
+  height: 56px;
+  cursor: pointer;
+  z-index: 10;
+}
+.instruction__block__card-button-left-first:hover,
+.instruction__block__card-button-left-middle:hover,
+.instruction__block__card-button-left-last:hover {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 30px;
+  height: 56px;
+}
+.instruction__block__card-button-right-first:hover,
+.instruction__block__card-button-right-middle:hover,
+.instruction__block__card-button-right-last:hover {
+  background-image: url(../img/sprite.png);
+  background-position: -60px 0px;
+  width: 30px;
+  height: 56px;
+}
+.partners__title {
+  width: 100%;
+}
+.partners__block {
+  width: 460px;
+}
+.partners__block__card {
+  width: 230px;
+  float: left;
+}
+.partners__block__button {
+  width: 100%;
+  overflow: hidden;
+}
+.partners__block__card-icon1,
+.partners__block__card-icon2,
+.partners__block__card-icon3,
+.partners__block__card-icon4 {
+  left: 143px;
+}
+.ideas__title {
+  width: 100%;
+}
+.ideas__search-block {
+  width: 580px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.ideas__search {
+  float: left;
+}
+.ideas__button-search {
+  float: left;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+.footer-wraper {
+  width: 700px;
+  margin: 0 auto;
+}
+.footer__brend {
+  float: left;
+}
+.footer__company {
+  float: left;
+  margin-left: 70px;
+
+  li {
+    display: list-item;
+    list-style: none;
+  }
+}
+.footer__company-title {
+  text-align: left;
+}
+.footer__company__list {
+  width: 100px;
+}
+.footer__partners {
+  float: left;
+  margin-left: 50px;
+}
+.footer__partners-title {
+  float: left;
+}
+.footer__partners-logo {
+  float: left;
+  margin-left: 100px;
+  margin-right: 0px;
+}

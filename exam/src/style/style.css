@@ -71,11 +71,15 @@
   font-style: normal; }
 
 @media screen and (min-width: 320px) {
+  * {
+    box-sizing: border-box; }
   body {
     position: relative; }
   header {
     position: absolute;
     width: 100%; }
+  figure {
+    margin: 0; }
   .header__block {
     width: 320px;
     margin: 0 auto; }
@@ -88,23 +92,26 @@
     font-family: 'Montserrat_bold'; }
   .header__block__reg {
     margin: 0 auto;
-    width: 135px;
+    width: 190px;
     padding: 20px; }
   .header__block__reg-log {
     background: none;
-    border: none;
-    padding: 5px;
+    border: 2px solid transparent;
+    padding: 10px;
     font-size: 14px;
     color: #ffffff;
     font-family: 'Montserrat_bold'; }
   .header__block__reg-sign {
     background: none;
+    border: 2px solid transparent;
     padding: 10px;
-    border-radius: 25px;
-    border: 2px solid #ffffff;
     font-size: 14px;
     color: #ffffff;
     font-family: 'Montserrat_bold'; }
+  .header__block__reg-log:hover,
+  .header__block__reg-sign:hover {
+    border-radius: 25px;
+    border: 2px solid #ffffff; }
   .info {
     background-image: url(../img/top-image.jpg);
     width: 100%;
@@ -161,33 +168,40 @@
     margin: 0 auto;
     margin-top: 10px;
     display: block; }
+  .instruction__block__card__block {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px; }
   .instruction__block__card-image {
     border-radius: 5px;
     width: 100%; }
-  .instruction__block__card-step {
-    position: absolute;
-    bottom: 115px;
-    left: 10px;
+  .instruction__block__card__block-step {
+    width: 55px;
     font-size: 10px;
     background-color: #ff4e50;
     padding: 10px;
     color: #ffffff;
     border-radius: 20px;
     font-family: 'Montserrat_regular'; }
-  .instruction__block__card-title {
-    position: absolute;
-    bottom: 60px;
-    left: 10px;
+  .instruction__block__card__block-title {
     color: #ffffff;
     font-size: 24px;
     font-family: 'Montserrat_bold'; }
-  .instruction__block__card-description {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
+  .instruction__block__card__block-description {
     color: #cccccc;
     font-size: 14px;
     font-family: 'Roboto_light'; }
+  .carousel-list-first li,
+  .carousel-list-middle li,
+  .carousel-list-last li {
+    display: none; }
+  .carousel-list-first li:last-child,
+  .carousel-list-middle li:last-child,
+  .carousel-list-last li:last-child {
+    display: block; }
   .partners {
     width: 100%; }
   .partners__title {
@@ -213,19 +227,19 @@
   .partners__block__card-icon1 {
     position: absolute;
     top: 90px;
-    left: 125px; }
+    left: 175px; }
   .partners__block__card-icon2 {
     position: absolute;
     top: 90px;
-    left: 125px; }
+    left: 175px; }
   .partners__block__card-icon3 {
     position: absolute;
     top: 90px;
-    left: 125px; }
+    left: 175px; }
   .partners__block__card-icon4 {
     position: absolute;
     top: 90px;
-    left: 125px; }
+    left: 175px; }
   .partners__block__card-name {
     color: #333333;
     text-align: center;
@@ -249,6 +263,8 @@
     font-family: 'Montserrat_bold'; }
   .ideas {
     width: 100%; }
+  .ideas__block {
+    margin: 10px; }
   .ideas__title {
     display: block;
     width: 300px;
@@ -257,6 +273,15 @@
     font-size: 22px;
     color: #333333;
     text-align: center;
+    font-family: 'Montserrat_bold'; }
+  .ideas__image-title {
+    position: absolute;
+    top: 45%;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 22px;
     font-family: 'Montserrat_bold'; }
   .ideas__question {
     display: block;
@@ -292,9 +317,21 @@
     width: 300px;
     margin: 0 auto;
     overflow: hidden; }
+  .grid:after {
+    content: '';
+    display: block;
+    clear: both; }
+  .grid-sizer,
+  .grid-item {
+    width: 100%; }
+  .grid-item {
+    float: left;
+    position: relative; }
   .grid-item img {
     display: block;
-    max-width: 100%; }
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 5px; }
   footer {
     border-top: 3px solid #ff4e50; }
   .footer__brend {
@@ -305,12 +342,10 @@
     font-family: 'Montserrat_bold';
     margin-top: 20px; }
   .footer__company {
-    width: 300px;
     margin: 0 auto;
     margin-top: 10px;
     overflow: hidden; }
   .footer__partners {
-    width: 300px;
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -348,12 +383,163 @@
     margin-top: 10px; } }
 
 @media screen and (min-width: 768px) {
-  .instruction {
-    width: 100%; } }
+  .header__block {
+    width: 100%; }
+  .header__block-title {
+    float: left;
+    margin-top: 30px;
+    margin-left: 45px; }
+  .header__block__reg {
+    float: right; }
+  .info__block {
+    width: 500px; }
+  .info__block-title {
+    font-size: 52px; }
+  .info__block-text {
+    font-size: 24px; }
+  .carousel-list-first,
+  .carousel-list-middle,
+  .carousel-list-last {
+    list-style: none;
+    width: 10000px;
+    padding: 0;
+    position: relative; }
+    .carousel-list-first li,
+    .carousel-list-middle li,
+    .carousel-list-last li {
+      display: block; }
+  .carousel-hider {
+    width: 320px;
+    overflow: hidden;
+    float: left; }
+  .carousel-element {
+    display: block;
+    margin-right: 25px;
+    float: left; }
+  .instruction__title {
+    width: 100%; }
+  .instruction__block__card {
+    position: relative;
+    width: 32%;
+    height: 400px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 1%;
+    overflow: hidden; }
+  .instruction__block__card-image {
+    width: 320px;
+    height: 400px; }
+  .instruction__block__card-button-left-first,
+  .instruction__block__card-button-left-middle,
+  .instruction__block__card-button-left-last {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    display: block;
+    background-image: url(../img/sprite.png);
+    background-position: -30px 0px;
+    width: 30px;
+    height: 56px;
+    cursor: pointer;
+    z-index: 10; }
+  .instruction__block__card-button-right-first,
+  .instruction__block__card-button-right-middle,
+  .instruction__block__card-button-right-last {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    display: block;
+    background-image: url(../img/sprite.png);
+    background-position: -90px 0px;
+    width: 30px;
+    height: 56px;
+    cursor: pointer;
+    z-index: 10; }
+  .instruction__block__card-button-left-first:hover,
+  .instruction__block__card-button-left-middle:hover,
+  .instruction__block__card-button-left-last:hover {
+    background-image: url(../img/sprite.png);
+    background-position: 0px 0px;
+    width: 30px;
+    height: 56px; }
+  .instruction__block__card-button-right-first:hover,
+  .instruction__block__card-button-right-middle:hover,
+  .instruction__block__card-button-right-last:hover {
+    background-image: url(../img/sprite.png);
+    background-position: -60px 0px;
+    width: 30px;
+    height: 56px; }
+  .partners__title {
+    width: 100%; }
+  .partners__block {
+    width: 460px; }
+  .partners__block__card {
+    width: 230px;
+    float: left; }
+  .partners__block__button {
+    width: 100%;
+    overflow: hidden; }
+  .partners__block__card-icon1,
+  .partners__block__card-icon2,
+  .partners__block__card-icon3,
+  .partners__block__card-icon4 {
+    left: 143px; }
+  .ideas__title {
+    width: 100%; }
+  .ideas__search-block {
+    width: 580px;
+    margin: 0 auto;
+    overflow: hidden; }
+  .ideas__search {
+    float: left; }
+  .ideas__button-search {
+    float: left;
+    margin-top: 0px;
+    margin-left: 10px; }
+  .footer-wraper {
+    width: 700px;
+    margin: 0 auto; }
+  .footer__brend {
+    float: left; }
+  .footer__company {
+    float: left;
+    margin-left: 70px; }
+    .footer__company li {
+      display: list-item;
+      list-style: none; }
+  .footer__company-title {
+    text-align: left; }
+  .footer__company__list {
+    width: 100px; }
+  .footer__partners {
+    float: left;
+    margin-left: 50px; }
+  .footer__partners-title {
+    float: left; }
+  .footer__partners-logo {
+    float: left;
+    margin-left: 100px;
+    margin-right: 0px; } }
 
 @media screen and (min-width: 1024px) {
-  .instruction {
-    width: 100%; } }
+  .header__block {
+    width: 1000px; }
+  .header__block-title {
+    float: left;
+    margin-top: 30px;
+    margin-left: 45px; }
+  .instruction__block {
+    width: 1000px; }
+  .partners__block {
+    width: 1000px; }
+  .partners__block__card {
+    margin-left: 20px; }
+  .ideas__block {
+    width: 1000px;
+    margin: 0 auto; }
+  .grid-sizer,
+  .grid-item {
+    width: 33.333%; } }
 
 .partners__block__card-icon4 {
   background-image: url(../img/sprite.png);
