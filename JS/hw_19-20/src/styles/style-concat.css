@@ -135,8 +135,11 @@
   height: 14px; }
 
 .slider {
+  width: 1160px;
+  margin: 0 auto;
   margin-top: 10px;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .slider-banner {
   position: absolute;
