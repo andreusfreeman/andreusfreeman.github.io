@@ -2,14 +2,21 @@
   width: 1000px;
 }
 .header__block-title {
+<<<<<<< HEAD
   margin-top: 46px;
   margin-left: 30px;
 }
 .header__block__reg {
 	margin-right: 10px;
+=======
+  float: left;
+  margin-top: 32px;
+  margin-left: 45px;
+>>>>>>> b6f4809711b81ab1a5ef26091f4d95c1ec67c3ec
 }
 .instruction__block {
   width: 1000px;
+  margin-top: 23px;
 }
 .instruction__block {
 	margin-top: 23px;
@@ -51,6 +58,7 @@
 .grid-item {
   width: 33.333%;
 }
+<<<<<<< HEAD
 .footer-wrapper {
 	width: 950px;
 }
@@ -60,16 +68,102 @@
 .footer__company-title {
   margin-left: 20px;
   margin-top: 10px;
+=======
+.info {
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 700px;
+}
+.header__block__reg {
+    width: 204px;
+	margin-top: 15px;
+	margin-right: 10px;
+}
+.header__block__reg-sign {
+	margin-left: 8px;
+}
+.info__block {
+	margin-top: 214px;
+}
+.info__block-text {
+	margin-top: 1px;
+}
+.info__block-find {
+	width: 230px;
+	margin-top: 15px;
+}
+.instruction__title {
+	margin-top: 95px;
+}
+.instruction__block__card-image {
+	width: 315px;
+}
+.instruction__block__card-button-right-first, .instruction__block__card-button-right-middle, .instruction__block__card-button-right-last {
+	top: 153px;
+    right: 30px;
+}
+.instruction__block__card-button-left-first, .instruction__block__card-button-left-middle, .instruction__block__card-button-left-last {
+	top: 153px;
+    left: 30px;
+}
+.instruction__block__card__block {
+	padding: 0 20px 10px 30px;
+}
+.instruction__block__card__block-title {
+	margin-bottom: 10px;
+}
+.instruction__block__card__block-step {
+	margin-bottom: 14px;
+	width: 70px;
+	padding: 3px 10px 4px 10px;
+}
+.partners__title  {
+	margin-top: 96px;
+}
+.partners__block__card-name {
+	margin-top: 7px;
+}
+.partners__block__button-search {
+	width: 195px;
+	margin-top: 30px;
+}
+.ideas__title {
+	margin-top: 96px;
+}
+.ideas__question {
+	margin-top: 20px;
+}
+.ideas__search-block {
+	width: 490px;
+	margin-top: 27px;
+}
+.ideas__button-search {
+	width: 160px;
+}
+footer {
+	margin-top: 60px;
+}
+.footer-wraper {
+	margin-top: 16px;
+	width: 950px;
+}
+.footer__company-title {
+	margin-left: 25px;
+>>>>>>> b6f4809711b81ab1a5ef26091f4d95c1ec67c3ec
 }
 .footer__company__list {
 	margin-left: 20px;
 }
 .footer__partners {
+<<<<<<< HEAD
 	margin-left: 56px;
 }
 .footer__partners-title {
   margin-top: 11px;
   margin-left: 4px;
+=======
+	margin-left: 65px;
+>>>>>>> b6f4809711b81ab1a5ef26091f4d95c1ec67c3ec
 }
 .footer__partners-logo {
 	margin-left: 370px;
