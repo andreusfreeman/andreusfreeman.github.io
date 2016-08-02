@@ -67,11 +67,11 @@ gulp.task('compress', function (cb) {
 // 		.pipe(gulp.dest('dist/images'))
 // );
 gulp.task('sass', function () {
-  return gulp.src('style/*.scss')
+  return gulp.src('src/style/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('style'));
+    .pipe(gulp.dest('src/style/'));
 });
 
 gulp.task('sass:watch', function () {
-  gulp.watch('style/*.scss', ['sass']);
+  gulp.watch('src/style/*.scss', ['sass']);
 });

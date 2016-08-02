@@ -3,20 +3,37 @@
 }
 .header__block-title {
   float: left;
-  margin-top: 30px;
+  margin-top: 46px;
   margin-left: 45px;
 }
 .header__block__reg {
   float: right;
+  width: 204px;
+	margin-top: 15px;
+	margin-right: 32px;
+}
+.header__block__reg-sign {
+	margin-left: 8px;
+}
+.info {
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 700px;
 }
 .info__block {
   width: 500px;
+  margin-top: 222px;
 }
 .info__block-title {
   font-size: 52px;
 }
 .info__block-text {
   font-size: 24px;
+  margin-top: 1px;
+}
+.info__block-find {
+	width: 230px;
+	margin-top: 15px;
 }
 .carousel-list-first,
 .carousel-list-middle,
@@ -42,6 +59,10 @@
 }
 .instruction__title {
   width: 100%;
+  margin-top: 95px;
+}
+.instruction__block {
+	margin-top: 23px;
 }
 .instruction__block__card {
   position: relative;
@@ -53,7 +74,7 @@
   overflow: hidden;
 }
 .instruction__block__card-image {
-  width: 320px;
+  width: 315px;
   height: 400px;
 }
 .instruction__block__card-button-left-first,
@@ -61,7 +82,7 @@
 .instruction__block__card-button-left-last {
   position: absolute;
   top: 40px;
-  left: 20px;
+  left: 10px;
   display: block;
   background-image: url(../img/sprite.png);
   background-position: -30px 0px;
@@ -75,7 +96,7 @@
 .instruction__block__card-button-right-last {
   position: absolute;
   top: 40px;
-  right: 20px;
+  right: 10px;
   display: block;
   background-image: url(../img/sprite.png);
   background-position: -90px 0px;
@@ -100,19 +121,36 @@
   width: 30px;
   height: 56px;
 }
+.instruction__block__card__block {
+  padding: 0 10px 10px 30px;
+}
+.instruction__block__card__block-step {
+	margin-bottom: 14px;
+	width: 70px;
+	padding: 3px 10px 4px 10px;
+}
 .partners__title {
   width: 100%;
+  margin-top: 96px;
 }
 .partners__block {
   width: 460px;
+  margin-top: 30px;
 }
 .partners__block__card {
   width: 230px;
   float: left;
 }
+.partners__block__card-name {
+	margin-top: 7px;
+}
 .partners__block__button {
   width: 100%;
   overflow: hidden;
+}
+.partners__block__button-search {
+  width: 195px;
+  margin-top: 80px;
 }
 .partners__block__card-icon1,
 .partners__block__card-icon2,
@@ -120,28 +158,43 @@
 .partners__block__card-icon4 {
   left: 143px;
 }
+.ideas__block {
+  margin-top: 30px;
+}
 .ideas__title {
   width: 100%;
+  margin-top: 96px;
+}
+.ideas__question {
+	margin-top: 20px;
 }
 .ideas__search-block {
-  width: 580px;
+  width: 410px;
   margin: 0 auto;
   overflow: hidden;
+  margin-top: 27px;
 }
 .ideas__search {
   float: left;
+  width: 240px;
 }
 .ideas__button-search {
   float: left;
+  width: 160px;
   margin-top: 0px;
   margin-left: 10px;
 }
-.footer-wraper {
+footer {
+	margin-top: 60px;
+}
+.footer-wrapper {
   width: 700px;
   margin: 0 auto;
+  margin-top: 16px;
 }
 .footer__brend {
   float: left;
+  margin-left: 6px;
 }
 .footer__company {
   float: left;
@@ -154,19 +207,21 @@
 }
 .footer__company-title {
   text-align: left;
+  margin-left: 8px;
 }
 .footer__company__list {
   width: 100px;
+  margin-left: 4px;
 }
 .footer__partners {
   float: left;
-  margin-left: 50px;
+  margin-left: 73px;
 }
 .footer__partners-title {
   float: left;
 }
 .footer__partners-logo {
   float: left;
-  margin-left: 100px;
+  margin-left: 122px;
   margin-right: 0px;
 }
