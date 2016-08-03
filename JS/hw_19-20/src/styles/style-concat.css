@@ -211,11 +211,11 @@
   .explain__block__info a:after {
     content: "";
     background-image: url(../img/read-more.png);
-    background-position: 1px 10px;
+    background-position: 1px 9px;
     float: right;
     display: block;
     width: 11px;
-    height: 10px;
+    height: 9px;
     margin-right: 145px;
     margin-top: 4px; }
   .explain__block__info a:hover:after {
@@ -225,7 +225,7 @@
     float: right;
     display: block;
     width: 11px;
-    height: 10px;
+    height: 9px;
     margin-right: 145px;
     margin-top: 4px; }
 
@@ -316,7 +316,8 @@ figcaption {
   overflow: hidden;
   margin-top: 5px;
   background-color: #ffffff;
-  border: 1px solid #e8e8e8; }
+  border: 1px solid #e8e8e8;
+  outline: 0; }
   .accordion__header h3 {
     color: #2a2d32;
     font-size: 13px;
@@ -522,7 +523,8 @@ figcaption {
     padding-bottom: 10px;
     border-bottom: 1px solid #393c40; }
   .info li:last-child {
-    padding-bottom: 85px; }
+    padding-bottom: 85px;
+    border-bottom: none; }
   .info a {
     text-decoration: none;
     color: #8a8a8a; }

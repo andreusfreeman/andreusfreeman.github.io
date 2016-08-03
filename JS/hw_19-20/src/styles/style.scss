@@ -232,11 +232,11 @@ $bgcSearch:   #35383c;
   a:after {
     content: "";
     background-image: url(../img/read-more.png);
-    background-position: 1px 10px;
+    background-position: 1px 9px;
     float: right;
     display: block;
     width: 11px;
-    height: 10px;
+    height: 9px;
     margin-right: 145px;
     margin-top: 4px;
   }
@@ -247,7 +247,7 @@ $bgcSearch:   #35383c;
     float: right;
     display: block;
     width: 11px;
-    height: 10px;
+    height: 9px;
     margin-right: 145px;
     margin-top: 4px;
   }
@@ -348,6 +348,7 @@ figcaption {
   margin-top: 5px;
   background-color: #ffffff;
   border: 1px solid #e8e8e8;
+  outline: 0;
 
   h3 {
     color: #2a2d32;
@@ -564,6 +565,7 @@ figcaption {
   }
   li:last-child {
     padding-bottom: 85px;
+    border-bottom: none;
   }
   a {
     text-decoration: none;

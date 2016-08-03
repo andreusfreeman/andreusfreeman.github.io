@@ -6,11 +6,11 @@
     leftFirst: function () {
       var elementsList = $('.carousel-list-first');
       var maximumOffset = 0;
-      var pixelsOffset = 345;
+      var pixelsOffset = 340;
       var elementsCount = elementsList.find('li').length;
       this.click(function() {
         if (currentLeftValueFirst != maximumOffset) {
-          currentLeftValueFirst += 345;
+          currentLeftValueFirst += 340;
           elementsList.animate({ left : currentLeftValueFirst + "px"}, 500);
         } else {
           currentLeftValueFirst = - ((elementsCount - 1) * pixelsOffset);
@@ -20,12 +20,12 @@
     },
     rightFirst: function() {
       var elementsList = $('.carousel-list-first');
-      var pixelsOffset = 345;
+      var pixelsOffset = 340;
       var elementsCount = elementsList.find('li').length;
       var minimumOffset = - ((elementsCount - 1) * pixelsOffset);
       this.click(function() {
         if (currentLeftValueFirst != minimumOffset) {
-          currentLeftValueFirst -= 345;
+          currentLeftValueFirst -= 340;
           elementsList.animate({ left : currentLeftValueFirst + "px"}, 500);
         } else {
           currentLeftValueFirst = 0;
@@ -36,11 +36,11 @@
     leftMiddle: function () {
       var elementsList = $('.carousel-list-middle');
       var maximumOffset = 0;
-      var pixelsOffset = 345;
+      var pixelsOffset = 340;
       var elementsCount = elementsList.find('li').length;
       this.click(function() {
         if (currentLeftValueMiddle != maximumOffset) {
-          currentLeftValueMiddle += 345;
+          currentLeftValueMiddle += 340;
           elementsList.animate({ left : currentLeftValueMiddle + "px"}, 500);
         } else {
           currentLeftValueMiddle = - ((elementsCount - 1) * pixelsOffset);
@@ -50,12 +50,12 @@
     },
     rightMiddle: function() {
       var elementsList = $('.carousel-list-middle');
-      var pixelsOffset = 345;
+      var pixelsOffset = 340;
       var elementsCount = elementsList.find('li').length;
       var minimumOffset = - ((elementsCount - 1) * pixelsOffset);
       this.click(function() {
         if (currentLeftValueMiddle != minimumOffset) {
-          currentLeftValueMiddle -= 345;
+          currentLeftValueMiddle -= 340;
           elementsList.animate({ left : currentLeftValueMiddle + "px"}, 500);
         } else {
           currentLeftValueMiddle = 0;
@@ -66,11 +66,11 @@
     leftLast: function () {
       var elementsList = $('.carousel-list-last');
       var maximumOffset = 0;
-      var pixelsOffset = 345;
+      var pixelsOffset = 340;
       var elementsCount = elementsList.find('li').length;
       this.click(function() {
         if (currentLeftValueLast != maximumOffset) {
-          currentLeftValueLast += 345;
+          currentLeftValueLast += 340;
           elementsList.animate({ left : currentLeftValueLast + "px"}, 500);
         } else {
           currentLeftValueLast = - ((elementsCount - 1) * pixelsOffset);
@@ -80,12 +80,12 @@
     },
     rightLast: function() {
       var elementsList = $('.carousel-list-last');
-      var pixelsOffset = 345;
+      var pixelsOffset = 340;
       var elementsCount = elementsList.find('li').length;
       var minimumOffset = - ((elementsCount - 1) * pixelsOffset);
       this.click(function() {
         if (currentLeftValueLast != minimumOffset) {
-          currentLeftValueLast -= 345;
+          currentLeftValueLast -= 340;
           elementsList.animate({ left : currentLeftValueLast + "px"}, 500);
         } else {
           currentLeftValueLast = 0;
