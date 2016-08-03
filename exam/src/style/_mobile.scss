@@ -11,6 +11,9 @@ header {
 figure {
   margin: 0;
 }
+button {
+  outline: 0;
+}
 .header__block {
   width: 320px;
   margin: 0 auto;
@@ -91,6 +94,7 @@ figure {
   border: 0px;
   border-radius: 20px;
   font-family: 'Montserrat_bold';
+  outline: 0;
 }
 .partners__block__card {
   position: relative;
