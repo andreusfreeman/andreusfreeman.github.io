@@ -284,7 +284,7 @@
     clear: both; }
   .grid-sizer,
   .grid-item {
-    width: 100%;
+    width: 30%;
     margin-bottom: 20px; }
   .grid-item {
     float: left;
@@ -574,7 +574,7 @@
     margin-top: 27px; }
   .grid-sizer,
   .grid-item {
-    width: 33.333%;
+    width: 33%;
     margin-bottom: 20px; }
   .info {
     background-position: center;
