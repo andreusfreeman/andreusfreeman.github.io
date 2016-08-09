@@ -153,6 +153,9 @@
     -moz-border-radius: 20px;
     behavior: url(pie.htc);
     font-family: 'Montserrat_bold'; }
+    .info__block-find {
+      behavior: url(pie.htc);
+    }
   .partners__block__card {
     position: relative; }
   .instruction {
