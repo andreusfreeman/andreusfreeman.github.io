@@ -57,6 +57,9 @@
     margin-right: 25px;
     float: left;
 }
+figure {
+  border-radius: 10px;
+}
 .instruction__title {
   width: 100%;
   margin-top: 95px;
@@ -76,6 +79,7 @@
 .instruction__block__card-image {
   width: 315px;
   height: 400px;
+  border-radius: 10px;
 }
 .instruction__block__card-button-left-first,
 .instruction__block__card-button-left-middle,
