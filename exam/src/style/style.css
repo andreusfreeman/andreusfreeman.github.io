@@ -546,6 +546,10 @@
     width: 160px;
     margin-top: 0px;
     margin-left: 10px; }
+  .grid-sizer,
+  .grid-item {
+    width: 33%;
+    float: left; }
   footer {
     margin-top: 60px; }
   .footer-wrapper {
@@ -686,6 +690,8 @@
   .footer__partners-title {
     margin-top: 11px;
     margin-left: 4px; }
+  .footer__brend {
+    margin-top: 20px; }
   .footer__partners-logo {
     margin-left: 370px; } }
 

@@ -184,6 +184,11 @@
   margin-top: 0px;
   margin-left: 10px;
 }
+.grid-sizer,
+.grid-item {
+  width: 33%;
+  float: left;
+}
 footer {
 	margin-top: 60px;
 }

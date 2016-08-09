@@ -2,28 +2,48 @@
 
 $(document).ready(function(){
   var loadCheck = true;
-  document.body.addEventListener('keypress', function(event) {
-    if (document.querySelector('.ideas__search').value.length > 0 && event.keyCode === 13) {
-      $('.grid').remove();
-      searchSomething(document.querySelector('.ideas__search').value);
-      document.querySelector('.ideas__search').value = '';
-      loadCheck = false;
-    }
-  });
-  document.querySelector('.ideas__button-search').addEventListener('click', function(event) {
-    if (document.querySelector('.ideas__search').value.length > 0) {
-      $('.grid').remove();
-      searchSomething(document.querySelector('.ideas__search').value);
-      document.querySelector('.ideas__search').value = '';
-      loadCheck = false;
-    }
-  });
+  if (document.body.addEventListener) {
+    document.body.addEventListener('keypress', function(event) {
+      if (document.querySelector('.ideas__search').value.length > 0 && event.keyCode === 13) {
+        $('.grid').remove();
+        searchSomething(document.querySelector('.ideas__search').value);
+        document.querySelector('.ideas__search').value = '';
+        loadCheck = false;
+      }
+    });
+    document.querySelector('.ideas__button-search').addEventListener('click', function(event) {
+      if (document.querySelector('.ideas__search').value.length > 0) {
+        $('.grid').remove();
+        searchSomething(document.querySelector('.ideas__search').value);
+        document.querySelector('.ideas__search').value = '';
+        loadCheck = false;
+      }
+    });
+  } else {
+    document.body.attachEvent('onkeypress', function(event) {
+      if (document.querySelector('.ideas__search').value.length > 0 && event.keyCode === 13) {
+        $('.grid').remove();
+        searchSomething(document.querySelector('.ideas__search').value);
+        document.querySelector('.ideas__search').value = '';
+        loadCheck = false;
+      }
+    });
+    document.querySelector('.ideas__button-search').attachEvent('onclick', function(event) {
+      if (document.querySelector('.ideas__search').value.length > 0) {
+        $('.grid').remove();
+        searchSomething(document.querySelector('.ideas__search').value);
+        document.querySelector('.ideas__search').value = '';
+        loadCheck = false;
+      }
+    });
+  }
   function grid() {
     var $grid = $('.grid');
     $grid.imagesLoaded(function () {
       $grid.masonry({
         itemSelector: '.grid-item',
         columnWidth: function( containerWidth ) {
+          console.log(containerWidth);
           return ( containerWidth / 3 - 10)
         },
         gutterWidth: 10
