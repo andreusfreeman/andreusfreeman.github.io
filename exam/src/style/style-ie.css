@@ -151,7 +151,7 @@
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
-    behavior: url(style/pie.htc);
+    behavior: url(pie.htc);
     font-family: 'Montserrat_bold'; }
   .partners__block__card {
     position: relative; }
