@@ -13,6 +13,16 @@ var concat = require('gulp-concat');
 var pump = require('pump');
 var uglifycss = require('gulp-uglifycss');
 
+gulp.task('compress', function (cb) {
+  pump([
+    gulp.src('src/js/concat/*.js'),
+    uglify(),
+    gulp.dest('dist/js/')
+  ],
+  cb
+);
+});
+
 gulp.task('css', function () {
   gulp.src('src/style/concat/*.css')
     .pipe(uglifycss({
@@ -21,15 +31,29 @@ gulp.task('css', function () {
     }))
     .pipe(gulp.dest('dist/css/'));
 });
+gulp.task('css-ie', function () {
+  gulp.src('src/style/style-ie.css')
+    .pipe(uglifycss({
+      "maxLineLen": 100,
+      "uglyComments": true
+    }))
+    .pipe(gulp.dest('dist/css/'));
+});
 
 gulp.task('concat-js', function() {
-  return gulp.src('src/js/*.js')
+  return gulp.src('src/js/script.js')
     .pipe(concat('script.min.js'))
     .pipe(gulp.dest('src/js/concat/'));
 });
 
+gulp.task('concat-html', function() {
+  return gulp.src('src/index.html')
+    .pipe(concat('index.html'))
+    .pipe(gulp.dest('dist/'));
+});
+
 gulp.task('concat-css', function () {
-  return gulp.src('src/style/*.css')
+  return gulp.src(['src/style/reset.css', 'src/style/style.css'])
     .pipe(concatCss("style.min.css"))
     .pipe(gulp.dest('src/style/concat/'));
 });
@@ -51,15 +75,6 @@ gulp.task('default', function () {
 			cascade: false
 		}))
 		.pipe(gulp.dest('dist'));
-});
-gulp.task('compress', function (cb) {
-  pump([
-        gulp.src('src/js/concat/*.js'),
-        uglify(),
-        gulp.dest('dist/js/')
-    ],
-    cb
-  );
 });
 // gulp.task('default', () =>
 // 	gulp.src('img/*')
