@@ -144,7 +144,6 @@
     margin-top: -9px;
     font-size: 14px;
     color: #ffffff;
-    background-color: #ff4e50;
     width: 280px;
     height: 40px;
     border: 0px;
@@ -152,7 +151,8 @@
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     behavior: url(pie.htc);
-    font-family: 'Montserrat_bold'; }
+    font-family: 'Montserrat_bold';
+    background-color: #ff4e50; }
   .partners__block__card {
     position: relative; }
   .instruction {
